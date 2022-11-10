@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div class="w-25 m-auto mt-5">
+        {{ form_start(formUser) }}
+            {{ form_row(formUser.prenom) }}
+            {{ form_row(formUser.nom) }}
+            {{ form_row(formUser.email) }}
+            {{ form_row(formUser.password) }}
+            <button class="btn btn-success" type="submit">S'inscrire</button>
+        {{ form_end(formUser) }}
+    </div>
+
+{% endblock %}

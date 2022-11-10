@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}LocaJeu - Mon compte{% endblock %}
+
+{% block body %}
+    <h1 class="mt-5">Mon compte</h1>
+
+    <h2 class="mt-2">{{ app.user.prenom }}</h2>
+    <p>Nom : {{ app.user.nom }}
+    <p>Email : {{ app.user.email }}</p>
+
+{% endblock %}
